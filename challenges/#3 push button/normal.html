@@ -1,0 +1,31 @@
+<div class="rect">
+  <div class="circles"></div>
+</div>
+  
+<style>
+body {
+  margin: 0;
+  background-color: #6592CF;
+}
+
+.rect {
+  background: #243D83;
+  clip-path: polygon(
+    50px 50px, 
+    350px 50px, 
+    350px 200px, 
+    50px 200px
+  );
+}
+  
+.circles {
+  width: 250px;
+  height: 250px;
+  margin: 25px 75px;
+  border-radius: 100%;
+  background: #EEB850;
+  box-shadow:
+    inset 0 0 0 50px #6592CF,
+    inset 0 0 0 100px #243D83;
+  }
+</style>

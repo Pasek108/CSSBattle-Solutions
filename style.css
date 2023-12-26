@@ -1,0 +1,223 @@
+/* ------------------------------ reset ------------------------------ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-sizing: normal;
+}
+
+body {
+  margin: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.17rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.83rem;
+}
+h6 {
+  font-size: 0.67rem;
+}
+
+h1 {
+  margin: 0.67em 0;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: inherit;
+  height: 0;
+  overflow: visible;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+audio:not([controls]) {
+  display: none;
+}
+
+picture {
+  display: contents;
+}
+source {
+  display: none;
+}
+
+img,
+svg,
+video,
+canvas {
+  height: auto;
+}
+
+audio {
+  width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+iframe {
+  border: none;
+}
+
+/* ------------------------------ styles ------------------------------ */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 9rem;
+}
+
+html {
+  font-family: "Heebo", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #13181c;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 1px solid white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+select {
+  width: 25%;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  font-family: "Heebo", sans-serif;
+  background-color: #13181c;
+  color: white;
+  font-size: 1rem;
+}
+
+option {
+  font-family: "Heebo", sans-serif;
+  background-color: #13181c;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+
+h2 {
+  margin: 0.5rem 0;
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+object {
+  width: 400px;
+  height: 300px;
+}
+
+pre,
+.info {
+  width: 400px;
+  height: 300px;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border: 1px solid #3f3f3f;
+  border-radius: 0.5rem;
+  overflow: scroll;
+  word-break: break-all;
+}
+
+span {
+  display: inline-block;
+}
+
+.name {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.match {
+  margin-bottom: 1rem;
+}
+
+a {
+  display: inline-block;
+  color: #1ca0ff;
+}
