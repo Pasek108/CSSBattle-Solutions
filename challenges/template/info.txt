@@ -1,0 +1,5 @@
+match in %
+link to the challenge 
+name of the challenge
+link to the battle
+name of the battle

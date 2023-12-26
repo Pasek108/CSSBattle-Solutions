@@ -21,7 +21,7 @@ function loadSolution(type, name) {
       const code = document.querySelector(`.${type} code`)
       const iframe = document.querySelector(`.${type} iframe`)
 
-      chars.innerText = html.length;
+      chars.innerText = html.length - (html.match(new RegExp("\n", "g")) || []).length
 
       const style = document.createElement("style")
       style.innerText = "body{width:400px;height:300px;overflow:hidden}"
@@ -50,11 +50,11 @@ function loadTarget(name) {
       const challenge_link = document.querySelector(".target .challenge-link")
       const battle_link = document.querySelector(".target .battle-link")
 
-      match.innerText = text[0];
-      challenge_link.href = text[1];
-      challenge_link.innerText = text[2];
-      battle_link.href = text[3];
-      battle_link.innerText = text[4];
+      match.innerText = text[0]
+      challenge_link.href = text[1]
+      challenge_link.innerText = text[2]
+      battle_link.href = text[3]
+      battle_link.innerText = text[4]
     })
     .catch((error) => console.warn(error))
 }
