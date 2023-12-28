@@ -1,0 +1,5 @@
+match in %
+https://cssbattle.dev/play/103
+#103. Super Saiyan
+https://cssbattle.dev/battle/18
+Battle #18

@@ -1,0 +1,5 @@
+match in %
+https://cssbattle.dev/play/82
+#82. Diamond Cut
+https://cssbattle.dev/battle/15
+Battle #15

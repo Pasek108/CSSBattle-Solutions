@@ -1,0 +1,5 @@
+match in %
+https://cssbattle.dev/play/41
+#41. Fox Head
+https://cssbattle.dev/battle/7
+Battle #7
