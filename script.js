@@ -4,11 +4,25 @@ const challange_select = document.querySelector("select")
 challange_select.addEventListener("change", (evt) => {
   loadTarget(evt.target.value)
   loadSolution("normal", evt.target.value)
-  loadSolution("optimal", evt.target.value)
+  main.className = "normal"
 })
 
+const main = document.querySelector("main")
+
+const switch_normal = document.querySelector(".switch .normal")
+switch_normal.addEventListener("click", () => {
+  main.className = "normal"
+  loadSolution("normal", challange_select.value)
+})
+
+const switch_minimal = document.querySelector(".switch .minimal")
+switch_minimal.addEventListener("click", () => {
+  main.className = "minimal"
+  loadSolution("optimal", challange_select.value)
+})
+
+main.className = "normal"
 loadSolution("normal", "#1 simply square")
-loadSolution("optimal", "#1 simply square")
 loadTarget("#1 simply square")
 
 function loadSolution(type, name) {
@@ -17,18 +31,19 @@ function loadSolution(type, name) {
   fetch(link)
     .then((response) => response.text())
     .then((html) => {
-      const chars = document.querySelector(`.${type} .chars`)
-      const code = document.querySelector(`.${type} code`)
-      const iframe = document.querySelector(`.${type} iframe`)
+      const chars = document.querySelector(`.chars`)
+      chars.innerText = `${html.length - (html.match(new RegExp("\n", "g")) || []).length} characters`
 
-      chars.innerText = html.length - (html.match(new RegExp("\n", "g")) || []).length
-
-      const style = document.createElement("style")
-      style.innerText = "body{width:400px;height:300px;overflow:hidden}"
-
+      const code = document.querySelector(`.code code`)
       code.innerText = html
+
+      const iframe = document.querySelector(`iframe.${type} `)
       iframe.src = link
-      iframe.contentDocument.body.appendChild(style)
+      iframe.addEventListener("load", (evt) => {
+        iframe.contentDocument.body.style.width = "400px"
+        iframe.contentDocument.body.style.height = "300px"
+        iframe.contentDocument.body.style.overflow = "hidden"
+      })
     })
     .catch((error) => console.warn(error))
 }
@@ -47,12 +62,13 @@ function loadTarget(name) {
       const text = html.split("\n")
 
       const match = document.querySelector(".target .match span")
-      const challenge_link = document.querySelector(".target .challenge-link")
-      const battle_link = document.querySelector(".target .battle-link")
-
       match.innerText = text[0]
+
+      const challenge_link = document.querySelector(".target .challenge-link")
       challenge_link.href = text[1]
       challenge_link.innerText = text[2]
+
+      const battle_link = document.querySelector(".target .battle-link")
       battle_link.href = text[3]
       battle_link.innerText = text[4]
     })

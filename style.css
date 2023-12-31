@@ -138,13 +138,15 @@ body {
   background-color: #13181c;
 }
 
-header {
+body > header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 4rem;
   padding: 0.5rem 1.5rem;
   border-bottom: 1px solid white;
+  background: linear-gradient(90deg, #181d23, #181d23, #07080b);
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -169,9 +171,7 @@ option {
 main {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   width: 100%;
-  padding: 0.5rem 1.5rem;
 }
 
 h2 {
@@ -184,23 +184,97 @@ main > div {
   align-items: center;
   justify-content: flex-start;
   flex-grow: 1;
+  height: calc(100vh - 4rem);
+  min-height: 600px;
+  border: 1px solid #27313a;
+  background-color: #121518;
 }
 
-object {
-  width: 400px;
-  height: 300px;
+.code {
+  flex-grow: 999;
+  max-width: calc(100vw / 3);
+  min-width: calc(400px + 2rem);
 }
 
-pre,
-.info {
-  width: 400px;
-  height: 300px;
-  padding: 0.75rem;
-  margin: 1rem 0;
-  border: 1px solid #3f3f3f;
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.switch {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  border: 1px solid #27313a;
   border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.switch > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.switch::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: #122b5f;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+main.normal iframe:nth-child(2) {
+  display: none;
+}
+
+main.normal .switch::before {
+  translate: 0;
+}
+
+main.minimal iframe:nth-child(1) {
+  display: none;
+}
+
+main.minimal .switch::before {
+  translate: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  background-color: #21272d;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
+pre {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
   overflow: scroll;
   word-break: break-all;
+  white-space: break-spaces;
 }
 
 span {
@@ -220,4 +294,12 @@ span {
 a {
   display: inline-block;
   color: #1ca0ff;
+}
+
+@media only screen and (max-width: 865px) {
+  .code {
+    flex-grow: 999;
+    max-width: unset;
+    min-width: 100%;
+  }
 }
