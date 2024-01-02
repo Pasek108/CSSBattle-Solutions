@@ -1,1 +1,40 @@
-Not attempted
+<div class="center"></div>
+<div class="diagonal1"></div>
+<div class="diagonal2"></div>
+  
+<style>
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+div {
+  position:absolute;
+  width: 50px;
+  height: 50px;
+  rotate: 45deg;
+  background: #FBE18C;
+}
+  
+.diagonal1 {
+  height: 200px;
+  background: linear-gradient(90deg,
+    #A3A368 75px,
+    #FBE18C 0,
+    #FBE18C 125px,
+    #A3A368 0
+  );
+}
+
+.diagonal2 {
+  width: 200px;
+  background: linear-gradient(90deg,
+    #F3AC3C 75px,
+    #FBE18C 0,
+    #FBE18C 125px,
+    #F3AC3C 0
+  );
+}
+</style>

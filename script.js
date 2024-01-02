@@ -40,8 +40,8 @@ function loadSolution(type, name) {
       const iframe = document.querySelector(`iframe.${type} `)
       iframe.src = link
       iframe.addEventListener("load", (evt) => {
-        iframe.contentDocument.body.style.width = "400px"
-        iframe.contentDocument.body.style.height = "300px"
+        iframe.contentDocument.body.style.maxWidth = "400px"
+        iframe.contentDocument.body.style.maxHeight = "400px"
         iframe.contentDocument.body.style.overflow = "hidden"
       })
     })

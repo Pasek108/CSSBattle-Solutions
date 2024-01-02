@@ -1,1 +1,32 @@
-Not attempted
+<div class="half-circle"></div>
+<div class="dot"></div>
+  
+<style>
+body {
+  margin: 0;
+  background:radial-gradient(circle,
+    #E08027 50px,
+    #824B20 0,
+    #824B20 80px,
+    #191919 0
+  );
+}
+
+.half-circle, .dot {
+  position: absolute;
+  aspect-ratio: 1;
+  margin: 90px 140px;
+  border-radius: 100%;
+}
+
+.half-circle {
+  width: 120px;
+  background: radial-gradient(#E08027 40px, #FFF58F 0);
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+  
+.dot {
+  width: 20px;
+  box-shadow: 0 50px #FFF58F, 100px 50px #FFF58F;
+}
+</style>
