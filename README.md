@@ -4,6 +4,8 @@
 > Challenges like that are opportunity to become better by coming up with your own solution. Take your time and think about your own approach.<br>
 > If you can't complete challenge, skip it and come back to it later. Look at someone's solutions as a last resort but consider it as defeat.
 
+<br>
+
 ## Table of Contents
 * [Informations](#informations)
 * [What is CSSBattle](#what-is-cssbattle)
