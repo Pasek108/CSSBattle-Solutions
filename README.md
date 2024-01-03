@@ -6,18 +6,15 @@
 
 <br>
 
-## Table of Contents
-* [Informations](#informations)
-* [What is CSSBattle](#what-is-cssbattle)
-* [Battles](#battles)
-
-<br>
-
 ## Informations
 Those are my [CSSBattle](https://cssbattle.dev) solutions.
+
+<br>
 
 ## What is CSSBattle
 [CSSBattle](https://cssbattle.dev) is an online game where players compete with each other to create the shortest and most effective CSS code to recreate visual shapes and patterns. 
 CSSBattle is a fun and challenging way to improve CSS coding skills while competing with other players.
+
+<br>
 
 ## Battles
