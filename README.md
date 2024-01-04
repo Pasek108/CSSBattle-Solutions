@@ -5,9 +5,24 @@
 > If you can't complete challenge, skip it and come back to it later. Look at someone's solutions as a last resort but consider it as defeat.
 
 <br>
-
+  
 ## Informations
-Those are my [CSSBattle](https://cssbattle.dev) solutions.
+Those are solutions for [CSSBattle](https://cssbattle.dev) challanges. 
+
+See [live demo](https://tic-tac-toe-alqu.onrender.com).
+
+### Technologies
+Languages:
+- HTML5
+- CSS3
+- JS ES2018
+  
+Libraries and frameworks:
+- [GoogleFonts](https://fonts.google.com)
+- [hilight.js](https://highlightjs.org)
+
+Programs:
+- [VSCode](https://code.visualstudio.com)
 
 <br>
 
