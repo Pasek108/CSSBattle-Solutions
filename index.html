@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSSBattle - Artur Pas</title>
 
+    <!-- --------------- google fonts --------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- --------------- hilight js --------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+
+    <!-- --------------- styles and scripts --------------- -->
+    <link rel="stylesheet" href="/reset.css" />
     <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
   </head>
@@ -18,7 +24,9 @@
     <header>
       <div class="title">Artur Pas - CSSBattle Solutions</div>
 
-      <select name="challange" id="">
+      <button class="change-challenge">Change challenge</button>
+
+      <select hidden name="challange" id="">
         <option value="#1 Simply Square">#1 Simply Square</option>
         <option value="#2 Carrom">#2 Carrom</option>
         <option value="#3 Push Button">#3 Push Button</option>
@@ -114,7 +122,7 @@
         <option disabled value="#93 Great Wall">#93 Great Wall</option>
         <option value="#94 Ripples">#94 Ripples</option>
         <option disabled value="#95 Pokeball">#95 Pokeball</option>
-        <option disabled value="#96 Mandala">#96 Mandala</option>
+        <option value="#96 Mandala">#96 Mandala</option>
         <option disabled value="#97 Snowman">#97 Snowman</option>
         <option disabled value="#98 Candle">#98 Candle</option>
         <option disabled value="#99 Gift Box">#99 Gift Box</option>
@@ -131,7 +139,7 @@
         <option disabled value="#110 Sunrays">#110 Sunrays</option>
         <option disabled value="#111 Rain Drops">#111 Rain Drops</option>
         <option disabled value="#112 Chevron">#112 Chevron</option>
-        <option disabled value="#113 Black Light">#113 Black Light</option>
+        <option value="#113 Black Light">#113 Black Light</option>
         <option disabled value="#114 Negative Box">#114 Negative Box</option>
         <option disabled value="#115 Droplet">#115 Droplet</option>
         <option disabled value="#116 Headphones">#116 Headphones</option>
@@ -152,11 +160,11 @@
         <option disabled value="#131 Letter W">#131 Letter W</option>
         <option disabled value="#132 Letter S">#132 Letter S</option>
         <option disabled value="#133 Spiral">#133 Spiral</option>
-        <option disabled value="#134 Wig">#134 Wig</option>
+        <option value="#134 Wig">#134 Wig</option>
         <option disabled value="#135 Spikes">#135 Spikes</option>
         <option disabled value="#136 Alien Eye">#136 Alien Eye</option>
-        <option disabled value="#137 Elbow">#137 Elbow</option>
-        <option disabled value="#138 Lotus">#138 Lotus</option>
+        <option value="#137 Elbow">#137 Elbow</option>
+        <option value="#138 Lotus">#138 Lotus</option>
         <option disabled value="#139 Lamp">#139 Lamp</option>
         <option disabled value="#140 Eclipse">#140 Eclipse</option>
         <option disabled value="#141 Third Eye">#141 Third Eye</option>
@@ -208,11 +216,13 @@
       </select>
     </header>
 
+    <div class="challenges" hidden></div>
+
     <main class="normal">
       <div class="code">
         <header>Code <span class="chars"></span></header>
 
-        <pre><code></code></pre>
+        <pre><code class="language-html"></code></pre>
       </div>
 
       <div class="preview">

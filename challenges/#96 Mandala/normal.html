@@ -1,1 +1,37 @@
-Not attempted
+<div class="circle left"></div>
+<div class="circle top"></div>
+<div class="circle right"></div>
+<div class="circle bot"></div>
+  
+<style>
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #6592CF 100px, #243D83 0);
+}
+
+.circle {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border: 20px solid #243D83;
+  border-radius: 999rem;
+}
+
+.circle.left {
+  left: 40px;
+}
+
+.circle.top {
+  top: -10px;
+}
+
+.circle.right {
+  right: 40px;
+}
+
+.circle.bot {
+  top: 140px;
+}
+</style>
