@@ -64,15 +64,38 @@ option {
 }
 
 .challenges {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   width: 100%;
   height: calc(100vh - 4rem);
   padding: 1rem;
   background-color: #13181c;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.battle {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  padding-top: 3rem;
+  border: 1px solid #27313a;
+  border-radius: 0.5rem;
+}
+
+.battle .title {
+  position: absolute;
+  width: 100%;
+  height: 2.125rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: #21272d;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 
 .challenge {

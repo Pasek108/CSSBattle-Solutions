@@ -32,7 +32,27 @@ class CSSBattleSolutions {
     const challange_select = document.querySelector("select")
     const options = challange_select.querySelectorAll("option")
 
+    let battle_id = 0
+    const battles_limits = [0, 12, 18, 20, 28, 30, 32, 41, 44, 46, 52, 60, 68, 76, 80, 88, 96, 100, 108, 116, 124, 132, 140, 142, 150, 158, 166, 170, 178, 186]
+    const battle_names = ["Battle #1 - Pilot Battle", "Battle #2 - Visibility", "Battle #3 - Cursor", "Battle #4 - Display", "Battle #5 - Inline", "Battle #6 - Conic", "Battle #7 - Backface", "Battle #8 - Transition", "Battle #9 - Margin", "Battle #10 - Block", "Battle #11 - Overflow", "Battle #12 - Blend", "Battle #13 - Clip", "Battle #14 - ZIndex", "Battle #15 - Filter", "Battle #16 - Aspect", "Battle #17 - Christmas 🎄", "Battle #18 - Float", "Battle #19 - Spacing", "Battle #20 - Hover", "Battle #21 - Rotate", "Battle #22 - Grid", "Battle #23 - Contain", "Battle #24 - Offset", "Battle #25 - Flex", "Battle #26 - Initial", "Battle #27 - Relative", "Battle #28 - Revert", "Battle #29 - Font"]
+
+    let battle_continer = null
+    let title = null
+
     for (let i = 0; i < options.length; i++) {
+      if (i === battles_limits[battle_id]) {
+        battle_id++
+        battle_continer = document.createElement("div")
+        battle_continer.className = "battle"
+
+        title = document.createElement("div")
+        title.className = "title"
+        title.innerText = battle_names[battle_id - 1]
+        battle_continer.appendChild(title)
+
+        this.chllenges_container.appendChild(battle_continer)
+      }
+
       const img_link = encodeURIComponent(`challenges/${options[i].value}/target.png`)
 
       const challenge = document.createElement("div")
@@ -58,7 +78,7 @@ class CSSBattleSolutions {
       number.innerText = `#${i + 1}`
       challenge.appendChild(number)
 
-      this.chllenges_container.appendChild(challenge)
+      battle_continer.appendChild(challenge)
     }
 
     /* ---------- change challenge ---------- */
