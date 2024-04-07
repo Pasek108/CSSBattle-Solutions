@@ -1,4 +1,4 @@
-# CSSBattle-Solutions Readme
+# CSSBattle Solutions - Readme
 > [!CAUTION]  
 > <h4>Please, don't look at my solutions until you have completed it yourself.</h4>
 > Challenges like that are opportunity to become better by coming up with your own solution. Take your time and think about your own approach.<br>
