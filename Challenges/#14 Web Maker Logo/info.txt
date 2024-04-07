@@ -1,4 +1,4 @@
-match in %
+100%
 https://cssbattle.dev/play/14
 #14. Web Maker Logo
 https://cssbattle.dev/battle/2

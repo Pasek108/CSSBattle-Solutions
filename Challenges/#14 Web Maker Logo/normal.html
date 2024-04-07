@@ -1,1 +1,43 @@
-Not attempted
+<div class="triangle t1"></div>
+<div class="triangle t2"></div>
+<div class="triangle t3"></div>
+<div class="triangle t4"></div>
+
+<style>
+body {
+  background: #F2F2B6;
+}
+
+.triangle {
+  position: absolute;
+  width: 150px;
+  height: 130px;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.t1 {
+  background: #FD4602;
+  top: 85px;
+  left: 80px;
+}
+
+.t2 {
+  background: #FF6D00;
+  top: 85px;
+  left: 60px;
+}
+
+.t3 {
+  background: #FF6D00;
+  top: 85px;
+  left: 190px;
+  rotate: 180deg;
+}
+
+.t4 {
+  background: #FD4602;
+  top: 85px;
+  left: 170px;
+  rotate: 180deg;
+}
+</style>

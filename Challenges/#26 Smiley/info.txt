@@ -1,4 +1,4 @@
-match in %
+100%
 https://cssbattle.dev/play/26
 #26. Smiley
 https://cssbattle.dev/battle/4
