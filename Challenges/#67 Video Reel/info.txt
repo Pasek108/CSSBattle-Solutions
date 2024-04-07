@@ -1,4 +1,4 @@
-match in %
+100%
 https://cssbattle.dev/play/67
 #67. Video Reel
 https://cssbattle.dev/battle/12

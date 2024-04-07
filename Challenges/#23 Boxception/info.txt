@@ -1,4 +1,4 @@
-match in %
+100% match
 https://cssbattle.dev/play/23
 #23. Boxception
 https://cssbattle.dev/battle/4
