@@ -16,7 +16,7 @@ CSSBattle is a fun and challenging way to improve CSS coding skills while compet
 Those are my normal and minimal solutions for [CSSBattle](https://cssbattle.dev) challanges.<br>
 See [live demo](https://tic-tac-toe-alqu.onrender.com).
 
-![preview](/preview.png)
+![preview](/_for_readme/preview.png)
 
 ### Technologies
 Languages:
