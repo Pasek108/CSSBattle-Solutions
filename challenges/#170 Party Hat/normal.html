@@ -1,1 +1,34 @@
-Not attempted
+<div class="triangle front"></div>
+<div class="triangle mid"></div>
+<div class="triangle back"></div>
+  
+<style>
+body {
+  margin: 0;
+  background: #73C6EA;
+}
+
+.triangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  z-index: 0;
+  background: #0D1335;
+  clip-path: polygon(50% 60px, 75px 80%, 325px 80%);
+}
+
+.mid {
+  z-index: 1;
+  background: #DC6638;
+  clip-path: polygon(50% 100px, 75px 80%, 325px 80%);
+}
+
+.front {
+  z-index: 2;
+  background: #FBFAE2;
+  clip-path: polygon(50% 140px, 75px 80%, 325px 80%);
+}
+</style>

@@ -1,4 +1,4 @@
-match in %
+100% match
 https://cssbattle.dev/play/167
 #167. React India
 https://cssbattle.dev/battle/27

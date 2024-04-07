@@ -17,19 +17,6 @@ body {
   background-color: #13181c;
 }
 
-body > header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 4rem;
-  padding: 0.5rem 1.5rem;
-  border-bottom: 1px solid white;
-  background: linear-gradient(90deg, #181d23, #181d23, #07080b);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 button {
   padding: 0.5rem 2rem;
   border: 1px solid white;
@@ -42,8 +29,14 @@ button {
   cursor: pointer;
 }
 
-.change-challenge:hover {
-  background-color: #122b5f;
+a {
+  display: inline-block;
+  color: #1ca0ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 select {
@@ -63,6 +56,78 @@ option {
   color: white;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  background-color: #21272d;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+}
+
+pre {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
+  overflow: scroll;
+  word-break: break-all;
+  white-space: break-spaces;
+}
+
+span {
+  display: inline-block;
+}
+
+/* -------------------------- header -------------------------- */
+body > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 1px solid white;
+  background: linear-gradient(90deg, #181d23, #181d23, #07080b);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cssbattle-link {
+  color: #ffdf00;
+}
+
+.cssbattle-link img {
+  display: inline-block;
+  height: 1.125rem;
+  margin-right: 0.25rem;
+  margin-top: -0.125rem;
+}
+
+.github-link {
+  color: white;
+}
+
+.github-link img {
+  display: inline-block;
+  height: 1.25rem;
+  margin-right: 0.25rem;
+  margin-top: -0.25rem;
+}
+
+.change-challenge:hover {
+  background-color: #122b5f;
+}
+
+/* -------------------------- challenges -------------------------- */
 .challenges {
   display: flex;
   flex-direction: column;
@@ -128,6 +193,7 @@ option {
   text-align: center;
 }
 
+/* -------------------------- main content -------------------------- */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -220,37 +286,6 @@ main.minimal .switch::before {
   translate: 100%;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0.25rem 1rem;
-  background-color: #21272d;
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-
-iframe {
-  width: 400px;
-  height: 300px;
-  background-color: #fff;
-}
-
-pre {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 1rem;
-  overflow: scroll;
-  word-break: break-all;
-  white-space: break-spaces;
-}
-
-span {
-  display: inline-block;
-}
-
 .name {
   margin-bottom: 0.25rem;
   font-weight: bold;
@@ -259,11 +294,6 @@ span {
 
 .match {
   margin-bottom: 1rem;
-}
-
-a {
-  display: inline-block;
-  color: #1ca0ff;
 }
 
 @media only screen and (max-width: 865px) {

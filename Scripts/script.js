@@ -29,57 +29,7 @@ class CSSBattleSolutions {
 
     /* ---------- choose challenge section ---------- */
     this.chllenges_container = document.querySelector(".challenges")
-    const challange_select = document.querySelector("select")
-    const options = challange_select.querySelectorAll("option")
-
-    let battle_id = 0
-    const battles_limits = [0, 12, 18, 20, 28, 30, 32, 41, 44, 46, 52, 60, 68, 76, 80, 88, 96, 100, 108, 116, 124, 132, 140, 142, 150, 158, 166, 170, 178, 186]
-    const battle_names = ["Battle #1 - Pilot Battle", "Battle #2 - Visibility", "Battle #3 - Cursor", "Battle #4 - Display", "Battle #5 - Inline", "Battle #6 - Conic", "Battle #7 - Backface", "Battle #8 - Transition", "Battle #9 - Margin", "Battle #10 - Block", "Battle #11 - Overflow", "Battle #12 - Blend", "Battle #13 - Clip", "Battle #14 - ZIndex", "Battle #15 - Filter", "Battle #16 - Aspect", "Battle #17 - Christmas 🎄", "Battle #18 - Float", "Battle #19 - Spacing", "Battle #20 - Hover", "Battle #21 - Rotate", "Battle #22 - Grid", "Battle #23 - Contain", "Battle #24 - Offset", "Battle #25 - Flex", "Battle #26 - Initial", "Battle #27 - Relative", "Battle #28 - Revert", "Battle #29 - Font"]
-
-    let battle_continer = null
-    let title = null
-
-    for (let i = 0; i < options.length; i++) {
-      if (i === battles_limits[battle_id]) {
-        battle_id++
-        battle_continer = document.createElement("div")
-        battle_continer.className = "battle"
-
-        title = document.createElement("div")
-        title.className = "title"
-        title.innerText = battle_names[battle_id - 1]
-        battle_continer.appendChild(title)
-
-        this.chllenges_container.appendChild(battle_continer)
-      }
-
-      const img_link = encodeURIComponent(`challenges/${options[i].value}/target.png`)
-
-      const challenge = document.createElement("div")
-      challenge.className = "challenge"
-
-      if (options[i].disabled) challenge.setAttribute("disabled", true)
-      else {
-        challenge.addEventListener("click", () => {
-          this.current_challenge = options[i].value
-          this.loadTarget(this.current_challenge)
-          this.switchToNormal()
-          this.hideChallenges()
-        })
-      }
-
-      const img = document.createElement("img")
-      img.src = img_link
-      img.alt = options[i].value
-      challenge.appendChild(img)
-
-      const number = document.createElement("div")
-      number.className = "number"
-      number.innerText = `#${i + 1}`
-      challenge.appendChild(number)
-
-      battle_continer.appendChild(challenge)
-    }
+    this.createChallengesCards()
 
     /* ---------- change challenge ---------- */
     this.change_challenge = document.querySelector(".change-challenge")
@@ -118,8 +68,8 @@ class CSSBattleSolutions {
   }
 
   loadTarget(name) {
-    const img_link = encodeURIComponent(`challenges/${name}/target.png`)
-    const info_link = encodeURIComponent(`challenges/${name}/info.txt`)
+    const img_link = encodeURIComponent(`Challenges/${name}/target.png`)
+    const info_link = encodeURIComponent(`Challenges/${name}/info.txt`)
 
     this.target_img.src = img_link
     this.target_img.alt = name
@@ -138,8 +88,92 @@ class CSSBattleSolutions {
       .catch((error) => console.warn(error))
   }
 
+  createChallengesCards() {
+    const challange_select = document.querySelector("select")
+    const options = challange_select.querySelectorAll("option")
+
+    // prettier-ignore
+    const battles_data = [
+      ["Battle #1 - Pilot Battle", 0],
+      ["Battle #2 - Visibility", 12],
+      ["Battle #3 - Cursor", 18],
+      ["Battle #4 - Display", 20],
+      ["Battle #5 - Inline", 28],
+      ["Battle #6 - Conic", 30],
+      ["Battle #7 - Backface", 32],
+      ["Battle #8 - Transition", 41],
+      ["Battle #9 - Margin", 44],
+      ["Battle #10 - Block", 46],
+      ["Battle #11 - Overflow", 52],
+      ["Battle #12 - Blend", 60],
+      ["Battle #13 - Clip", 68],
+      ["Battle #14 - ZIndex", 76],
+      ["Battle #15 - Filter", 80],
+      ["Battle #16 - Aspect", 88],
+      ["Battle #17 - Christmas 🎄", 96],
+      ["Battle #18 - Float", 100],
+      ["Battle #19 - Spacing", 108],
+      ["Battle #20 - Hover", 116],
+      ["Battle #21 - Rotate", 124],
+      ["Battle #22 - Grid", 132],
+      ["Battle #23 - Contain", 140],
+      ["Battle #24 - Offset", 142],
+      ["Battle #25 - Flex", 150],
+      ["Battle #26 - Initial", 158],
+      ["Battle #27 - Relative", 166],
+      ["Battle #28 - Revert", 170],
+      ["Battle #29 - Font", 178],
+      ["Battle #30 - Gradient", 186],
+      ["", 194]
+    ]
+
+    let battle_id = 0
+    let battle_continer = null
+
+    for (let i = 0; i < options.length; i++) {
+      if (i === battles_data[battle_id][1]) {
+        const title = document.createElement("div")
+        title.className = "title"
+        title.innerText = battles_data[battle_id++][0]
+
+        battle_continer = document.createElement("div")
+        battle_continer.className = "battle"
+        battle_continer.appendChild(title)
+
+        this.chllenges_container.appendChild(battle_continer)
+      }
+
+      const img_link = encodeURIComponent(`Challenges/${options[i].value}/target.png`)
+
+      const challenge = document.createElement("div")
+      challenge.className = "challenge"
+
+      if (options[i].disabled) challenge.setAttribute("disabled", true)
+      else {
+        challenge.addEventListener("click", () => {
+          this.current_challenge = options[i].value
+          this.loadTarget(this.current_challenge)
+          this.switchToNormal()
+          this.hideChallenges()
+        })
+      }
+
+      const img = document.createElement("img")
+      img.src = img_link
+      img.alt = options[i].value
+      challenge.appendChild(img)
+
+      const number = document.createElement("div")
+      number.className = "number"
+      number.innerText = `#${i + 1}`
+      challenge.appendChild(number)
+
+      battle_continer.appendChild(challenge)
+    }
+  }
+
   loadSolution(type, name) {
-    const link = encodeURIComponent(`challenges/${name}/${type}.html`)
+    const link = encodeURIComponent(`Challenges/${name}/${type}.html`)
 
     fetch(link)
       .then((response) => response.text())
