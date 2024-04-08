@@ -1,1 +1,33 @@
-Not attempted
+<div class="semi-circle sc1"></div>
+<div class="semi-circle sc2"></div>
+
+<style>
+body {
+  background: radial-gradient(
+    circle, 
+    #84271C 25px,
+    #191210 0,
+    #191210 50px,
+    #ECA03D 0,
+    #ECA03D 70px,
+    #191210 0
+  );
+}
+
+.semi-circle {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 60px;
+  height: 60px;
+  border: 20px solid #ECA03D;
+  border-radius: 100%;
+  background: #191210;
+  clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
+}
+
+.sc2 {
+  left: 250px;
+  rotate: 180deg;
+}
+</style>

@@ -1,4 +1,4 @@
-match in %
+100%
 https://cssbattle.dev/play/11
 #11. Eye of Sauron
 https://cssbattle.dev/battle/1
