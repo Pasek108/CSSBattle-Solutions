@@ -42,7 +42,7 @@ class CSSBattleSolutions {
     })
 
     /* ---------- init challenge ---------- */
-    this.current_challenge = "#1 simply square"
+    this.current_challenge = "1_Simply_Square"
     this.loadTarget(this.current_challenge)
     this.switchToNormal()
   }
