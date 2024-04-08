@@ -68,8 +68,8 @@ class CSSBattleSolutions {
   }
 
   loadTarget(name) {
-    const img_link = encodeURIComponent(`Challenges/${name}/target.png`)
-    const info_link = encodeURIComponent(`Challenges/${name}/info.txt`)
+    const img_link = encodeURIComponent(`./Challenges/${name}/target.png`)
+    const info_link = encodeURIComponent(`./Challenges/${name}/info.txt`)
 
     this.target_img.src = img_link
     this.target_img.alt = name
@@ -143,7 +143,7 @@ class CSSBattleSolutions {
         this.chllenges_container.appendChild(battle_continer)
       }
 
-      const img_link = encodeURIComponent(`Challenges/${options[i].value}/target.png`)
+      const img_link = encodeURIComponent(`./Challenges/${options[i].value}/target.png`)
 
       const challenge = document.createElement("div")
       challenge.className = "challenge"
@@ -173,7 +173,7 @@ class CSSBattleSolutions {
   }
 
   loadSolution(type, name) {
-    const link = encodeURIComponent(`Challenges/${name}/${type}.html`)
+    const link = encodeURIComponent(`./Challenges/${name}/${type}.html`)
 
     fetch(link)
       .then((response) => response.text())
