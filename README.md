@@ -14,7 +14,7 @@ CSSBattle is a fun and challenging way to improve CSS coding skills while compet
 
 ## Informations
 Those are my normal and minimal solutions for [CSSBattle](https://cssbattle.dev) challanges.<br>
-See [live demo](https://tic-tac-toe-alqu.onrender.com).
+See [live demo](https://pasek108.github.io/CSSBattle-Solutions/).
 
 ![preview](/_for_readme/preview.png)
 
@@ -30,7 +30,3 @@ Libraries and frameworks:
 
 Programs:
 - [VSCode](https://code.visualstudio.com)
-
-<br>
-
-## Battles
