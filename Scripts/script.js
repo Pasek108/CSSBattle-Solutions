@@ -173,7 +173,7 @@ class CSSBattleSolutions {
   }
 
   loadSolution(type, name) {
-    const link = `./Challenges/${name}/${type}.html`
+    const link = `Challenges/${name}/${type}.html`
 
     fetch(link)
       .then((response) => response.text())
@@ -186,6 +186,7 @@ class CSSBattleSolutions {
 
         const iframe = document.querySelector(`iframe.${type}`)
 
+        console.log(iframe.src, `http://${location.host}/${link}`)
         if (iframe.src == `http://${location.host}/${link}`) return
 
         iframe.src = link
