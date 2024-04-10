@@ -30,3 +30,7 @@ Libraries and frameworks:
 
 Programs:
 - [VSCode](https://code.visualstudio.com)
+
+### Acknowledgements
+[CSSBattle Previewer 2.1](https://tc70f3.csb.app)
+[CSSBattle Unit Converter](https://u9kels.csb.app)
