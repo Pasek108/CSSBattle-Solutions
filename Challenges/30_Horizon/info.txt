@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/30
-#30. Horizon
-https://cssbattle.dev/battle/5
-Battle #5

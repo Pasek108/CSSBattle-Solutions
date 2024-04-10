@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/151
-#151. Pawn
-https://cssbattle.dev/battle/25
-Battle #25

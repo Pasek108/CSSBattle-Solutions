@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/36
-#36. Interleaved
-https://cssbattle.dev/battle/7
-Battle #7

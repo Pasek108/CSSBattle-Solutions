@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/185 
-#185. South Korea
-https://cssbattle.dev/battle/29
-Battle #29

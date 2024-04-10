@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/153
-#153. Checkers
-https://cssbattle.dev/battle/25
-Battle #25

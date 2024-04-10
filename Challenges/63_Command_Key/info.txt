@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/63
-#63. Command Key
-https://cssbattle.dev/battle/12
-Battle #12

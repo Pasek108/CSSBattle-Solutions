@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/85
-#85. Pythagoras
-https://cssbattle.dev/battle/15
-Battle #15

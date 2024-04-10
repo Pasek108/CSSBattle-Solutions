@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/94
-#94. Ripples
-https://cssbattle.dev/battle/16
-Battle #16

@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/127
-#127. Letter I
-https://cssbattle.dev/battle/21
-Battle #21

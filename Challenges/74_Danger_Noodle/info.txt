@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/74
-#74. Danger Noodle
-https://cssbattle.dev/battle/13
-Battle #13

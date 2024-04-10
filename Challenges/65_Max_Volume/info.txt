@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/65
-#65. Max Volume
-https://cssbattle.dev/battle/12
-Battle #12

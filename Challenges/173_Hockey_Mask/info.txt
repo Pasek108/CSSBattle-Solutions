@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/173
-#173. Hockey Mask
-https://cssbattle.dev/battle/28
-Battle #28

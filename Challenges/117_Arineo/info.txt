@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/117
-#117. Arineo
-https://cssbattle.dev/battle/20
-Battle #20

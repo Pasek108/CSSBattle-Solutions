@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/61
-#61. ImprovMX
-https://cssbattle.dev/battle/12
-Battle #12

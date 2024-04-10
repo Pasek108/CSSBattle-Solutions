@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/92
-#92. Squeeze
-https://cssbattle.dev/battle/16
-Battle #16

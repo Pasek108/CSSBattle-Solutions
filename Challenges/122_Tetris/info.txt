@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/122
-#122. Tetris
-https://cssbattle.dev/battle/20
-Battle #20

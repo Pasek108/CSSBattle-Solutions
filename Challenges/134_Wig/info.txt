@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/134
-#134. Wig
-https://cssbattle.dev/battle/22
-Battle #22

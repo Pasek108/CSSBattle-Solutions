@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/109
-#109. Curtain
-https://cssbattle.dev/battle/19
-Battle #19

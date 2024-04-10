@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/73
-#73. Happy Tiger
-https://cssbattle.dev/battle/13
-Battle #13

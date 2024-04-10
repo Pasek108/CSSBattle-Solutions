@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/45
-#45. Magical Tree
-https://cssbattle.dev/battle/9
-Battle #9

@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/66
-#66. Batmicky
-https://cssbattle.dev/battle/12
-Battle #12

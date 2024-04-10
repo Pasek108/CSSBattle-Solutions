@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/75
-#75. Hippo
-https://cssbattle.dev/battle/13
-Battle #13

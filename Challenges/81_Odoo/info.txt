@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/81
-#81. Odoo
-https://cssbattle.dev/battle/15
-Battle #15

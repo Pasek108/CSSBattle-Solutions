@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/139
-#139. Lamp
-https://cssbattle.dev/battle/22
-Battle #22

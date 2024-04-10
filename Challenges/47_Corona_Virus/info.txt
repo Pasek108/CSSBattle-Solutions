@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/47
-#47. Corona Virus
-https://cssbattle.dev/battle/10
-Battle #10

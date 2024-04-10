@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/31
-#31. Equals
-https://cssbattle.dev/battle/6
-Battle #6

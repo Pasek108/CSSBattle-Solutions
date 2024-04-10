@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/80
-#80. Piano
-https://cssbattle.dev/battle/14
-Battle #14

@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/70
-#70. Froggy
-https://cssbattle.dev/battle/13
-Battle #13

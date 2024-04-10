@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/50
-#50. Use Hand Sanitizer
-https://cssbattle.dev/battle/10
-Battle #10

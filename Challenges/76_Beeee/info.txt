@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/76
-#76. Beeee
-https://cssbattle.dev/battle/13
-Battle #13

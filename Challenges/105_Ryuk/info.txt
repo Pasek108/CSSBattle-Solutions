@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/105
-#105. Ryuk
-https://cssbattle.dev/battle/18
-Battle #18

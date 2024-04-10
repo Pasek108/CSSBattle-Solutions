@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/186
-#186. Guernsey
-https://cssbattle.dev/battle/29
-Battle #29

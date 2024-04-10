@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/17
-#17. Fidget Spinner
-https://cssbattle.dev/battle/2
-Battle #2

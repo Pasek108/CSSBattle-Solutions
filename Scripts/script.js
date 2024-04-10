@@ -1,203 +1,236 @@
 "use strict"
 
-class CSSBattleSolutions {
-  constructor() {
-    this.main = document.querySelector("main")
+// [solved, folder_name, match_precentage]
+const challenges = [
+  [1, "1_Simply_Square", 100],
+  [1, "2_Carrom", 100],
+  [1, "3_Push_Button", 100],
+  [1, "4_Ups_n_Downs", 100],
+  [1, "5_Acid_Rain", 100],
+  [1, "6_Missing_Slice", 100],
+  [1, "7_Leafy_Trail", 100],
+  [1, "8_Forking_Crazy", 100],
+  [1, "9_Tesseract", 100],
+  [1, "10_Cloaked_Spirits", 100],
+  [1, "11_Eye_of_Sauron", 100],
+  [1, "12_Wiggly_Moustache", 100],
+  [1, "13_Totally_Triangle", 100],
+  [1, "14_Web_Maker_Logo", 100],
+  [0, "15_Overlap", 100],
+  [0, "16_Eye_of_the_Tiger", 100],
+  [0, "17_Fidget_Spinner", 100],
+  [1, "18_Matrix", 100],
+  [0, "19_Cube", 100],
+  [0, "20_Ticket", 100],
+  [0, "21_SitePoint_Logo", 100],
+  [0, "22_Cloud", 100],
+  [1, "23_Boxception", 100],
+  [0, "24_Switches", 100],
+  [0, "25_Blossom", 100],
+  [1, "26_Smiley", 100],
+  [0, "27_Lock_Up", 100],
+  [0, "28_Cups_&_Balls", 100],
+  [1, "29_Suffocate", 100],
+  [1, "30_Horizon", 100],
+  [1, "31_Equals", 100],
+  [1, "32_Band-aid", 100],
+  [0, "33_Birdie", 100],
+  [0, "34_Christmas_Tree", 100],
+  [0, "35_Ice_Cream", 100],
+  [1, "36_Interleaved", 100],
+  [0, "37_Tunnel", 100],
+  [1, "38_Not_Simply_Square", 100],
+  [0, "39_Sunset", 100],
+  [0, "40_Letter_B", 100],
+  [0, "41_Fox_Head", 100],
+  [0, "42_Baby", 100],
+  [0, "43_Wrench", 100],
+  [0, "44_Stripes", 100],
+  [0, "45_Magical_Tree", 100],
+  [1, "46_Mountains", 100],
+  [0, "47_Corona_Virus", 100],
+  [0, "48_Wash_Your_Hands", 100],
+  [0, "49_Stay_at_Home", 100],
+  [0, "50_Use_Hand_Sanitizer", 100],
+  [0, "51_Wear_a_Mask", 100],
+  [0, "52_Break_the_Chain", 100],
+  [0, "53_Pastel_Logo", 100],
+  [0, "54_Black_Lives_Matter", 100],
+  [0, "55_Windmill", 100],
+  [0, "56_Skull", 100],
+  [0, "57_Pillars", 100],
+  [0, "58_Rose", 100],
+  [0, "59_Earth", 100],
+  [0, "60_Evil_Triangles", 100],
+  [0, "61_ImprovMX", 100],
+  [0, "62_Sunset", 100],
+  [0, "63_Command_Key", 100],
+  [1, "64_Door_Knob", 100],
+  [0, "65_Max_Volume", 100],
+  [0, "66_Batmicky", 100],
+  [1, "67_Video_Reel", 100],
+  [0, "68_Bell", 100],
+  [0, "69_PushOwl", 100],
+  [0, "70_Froggy", 100],
+  [0, "71_Elephant", 100],
+  [0, "72_Sheep", 100],
+  [0, "73_Happy_Tiger", 100],
+  [0, "74_Danger_Noodle", 100],
+  [0, "75_Hippo", 100],
+  [0, "76_Beeee", 100],
+  [0, "77_Notes", 100],
+  [0, "78_Ukulele", 100],
+  [0, "79_Tambourine", 100],
+  [0, "80_Piano", 100],
+  [0, "81_Odoo", 100],
+  [0, "82_Diamond_Cut", 100],
+  [0, "83_Supernova", 100],
+  [0, "84_Junction", 100],
+  [0, "85_Pythagoras", 100],
+  [0, "86_Stairway", 100],
+  [0, "87_Building_Blocks", 100],
+  [0, "88_Tight_Corner", 100],
+  [0, "89_Summit", 100],
+  [0, "90_Eclipse", 100],
+  [0, "91_Reflection", 100],
+  [0, "92_Squeeze", 100],
+  [0, "93_Great_Wall", 100],
+  [1, "94_Ripples", 100],
+  [0, "95_Pokeball", 100],
+  [1, "96_Mandala", 100],
+  [0, "97_Snowman", 100],
+  [0, "98_Candle", 100],
+  [0, "99_Gift_Box", 100],
+  [0, "100_CSSBattle", 100],
+  [0, "101_Sharingan", 100],
+  [0, "102_One_Piece", 100],
+  [0, "103_Super_Saiyan", 100],
+  [0, "104_Amegakure", 100],
+  [0, "105_Ryuk", 100],
+  [0, "106_Ryuk's_Apple", 100],
+  [0, "107_Sealing_Wand", 100],
+  [0, "108_Clow_Card", 100],
+  [0, "109_Curtain", 100],
+  [0, "110_Sunrays", 100],
+  [0, "111_Rain_Drops", 100],
+  [0, "112_Chevron", 100],
+  [1, "113_Black_Light", 100],
+  [0, "114_Negative_Box", 100],
+  [0, "115_Droplet", 100],
+  [0, "116_Headphones", 100],
+  [0, "117_Arineo", 100],
+  [0, "118_Donkey_Kong", 100],
+  [0, "119_Pacman", 100],
+  [0, "120_Tank", 100],
+  [0, "121_Duck_Hunt", 100],
+  [0, "122_Tetris", 100],
+  [0, "123_Snake", 100],
+  [0, "124_Space_Invaders", 100],
+  [0, "125_Root_Learn", 100],
+  [0, "126_Letter_A", 100],
+  [0, "127_Letter_I", 100],
+  [0, "128_Letter_N", 100],
+  [0, "129_Letter_B", 100],
+  [0, "130_Letter_O", 100],
+  [0, "131_Letter_W", 100],
+  [0, "132_Letter_S", 100],
+  [0, "133_Spiral", 100],
+  [1, "134_Wig", 100],
+  [0, "135_Spikes", 100],
+  [0, "136_Alien_Eye", 100],
+  [1, "137_Elbow", 100],
+  [1, "138_Lotus", 100],
+  [0, "139_Lamp", 100],
+  [0, "140_Eclipse", 100],
+  [0, "141_Third_Eye", 100],
+  [0, "142_Curtains", 100],
+  [1, "143_Simply_Circle", 100],
+  [0, "144_Long_Heart", 100],
+  [0, "145_Spotlight", 100],
+  [0, "146_Streaks", 100],
+  [0, "147_Splash", 100],
+  [0, "148_Eight", 100],
+  [0, "149_Earthworm", 100],
+  [0, "150_Finger_Heart", 100],
+  [0, "151_Pawn", 100],
+  [0, "152_Rook", 100],
+  [0, "153_Checkers", 100],
+  [0, "154_Poker_Chip", 100],
+  [0, "155_Snakes_&_Ladders", 100],
+  [0, "156_Chinese_Checkers", 100],
+  [0, "157_Monopoly", 100],
+  [0, "158_Clubs", 100],
+  [0, "159_Portal", 100],
+  [0, "160_Donut", 100],
+  [1, "161_Converge", 100],
+  [1, "162_Upwards", 100],
+  [0, "163_Missing_Piece", 100],
+  [0, "164_Rangoli", 100],
+  [0, "165_Pyramid", 100],
+  [0, "166_Flow", 100],
+  [1, "167_React_India", 100],
+  [1, "168_Carpet", 100],
+  [0, "169_Abstract_Plate", 100],
+  [1, "170_Party_Hat", 100],
+  [0, "171_Pumpkin", 100],
+  [0, "172_Crossbones", 100],
+  [0, "173_Hockey_Mask", 100],
+  [0, "174_Witch's_Hat", 100],
+  [0, "175_Evil_Cat", 100],
+  [0, "176_Castlevania", 100],
+  [0, "177_Frankenstein", 100],
+  [0, "178_Candy", 100],
+  [1, "179_Tanzania", 100],
+  [0, "180_Kuwait", 100],
+  [0, "181_Iceland", 100],
+  [0, "182_Bahrain", 100],
+  [0, "183_Brazil", 100],
+  [0, "184_India", 100],
+  [0, "185_South_Korea", 100],
+  [0, "186_Guernsey", 100],
+  [0, "187_Striped_Triangle", 100],
+  [0, "188_Icecream_Sticks", 100],
+  [0, "189_Triangle_Hook", 100],
+  [0, "190_Power_Chip", 100],
+  [0, "191_Modern_Fence", 100],
+  [0, "192_Abstract_Firefly", 100],
+  [0, "193_Galver", 100],
+  [0, "194_Fountain", 100],
+]
 
-    /* ---------- code section ---------- */
-    const code = document.querySelector(".code")
+// [battle_name, last_challenge_id]
+const battles = [
+  ["Battle #1 - Pilot Battle", 12],
+  ["Battle #2 - Visibility", 18],
+  ["Battle #3 - Cursor", 20],
+  ["Battle #4 - Display", 28],
+  ["Battle #5 - Inline", 30],
+  ["Battle #6 - Conic", 32],
+  ["Battle #7 - Backface", 41],
+  ["Battle #8 - Transition", 44],
+  ["Battle #9 - Margin", 46],
+  ["Battle #10 - Block", 52],
+  ["Battle #11 - Overflow", 60],
+  ["Battle #12 - Blend", 68],
+  ["Battle #13 - Clip", 76],
+  ["Battle #14 - ZIndex", 80],
+  ["Battle #15 - Filter", 88],
+  ["Battle #16 - Aspect", 96],
+  ["Battle #17 - Christmas 🎄", 100],
+  ["Battle #18 - Float", 108],
+  ["Battle #19 - Spacing", 116],
+  ["Battle #20 - Hover", 124],
+  ["Battle #21 - Rotate", 132],
+  ["Battle #22 - Grid", 140],
+  ["Battle #23 - Contain", 142],
+  ["Battle #24 - Offset", 150],
+  ["Battle #25 - Flex", 158],
+  ["Battle #26 - Initial", 166],
+  ["Battle #27 - Relative", 170],
+  ["Battle #28 - Revert", 178],
+  ["Battle #29 - Font", 186],
+  ["Battle #30 - Gradient", 194],
+]
 
-    this.chars = code.querySelector(`.chars`)
-    this.code = code.querySelector(`code`)
-
-    /* ---------- preview section ---------- */
-    const preview = document.querySelector(".preview")
-
-    const switch_normal = preview.querySelector(".switch .normal")
-    switch_normal.addEventListener("click", this.switchToNormal.bind(this))
-
-    const switch_minimal = preview.querySelector(".switch .minimal")
-    switch_minimal.addEventListener("click", this.switchToMinimal.bind(this))
-
-    /* ---------- target section ---------- */
-    const target = document.querySelector(".target")
-
-    this.match = target.querySelector(".match span")
-    this.challenge_link = target.querySelector(".challenge-link")
-    this.battle_link = target.querySelector(".battle-link")
-    this.target_img = target.querySelector("img")
-
-    /* ---------- choose challenge section ---------- */
-    this.chllenges_container = document.querySelector(".challenges")
-    this.createChallengesCards()
-
-    /* ---------- change challenge ---------- */
-    this.change_challenge = document.querySelector(".change-challenge")
-    this.change_challenge.addEventListener("click", () => {
-      // prettier-ignore
-      switch (this.chllenges_container.hasAttribute("hidden")) {
-        case true: this.showChallenges(); break
-        case false: this.hideChallenges(); break
-      }
-    })
-
-    /* ---------- init challenge ---------- */
-    this.current_challenge = "1_Simply_Square"
-    this.loadTarget(this.current_challenge)
-    this.switchToNormal()
-  }
-
-  switchToNormal() {
-    this.main.className = "normal"
-    this.loadSolution("normal", this.current_challenge)
-  }
-
-  switchToMinimal() {
-    this.main.className = "minimal"
-    this.loadSolution("optimal", this.current_challenge)
-  }
-
-  showChallenges() {
-    this.chllenges_container.removeAttribute("hidden")
-    this.main.setAttribute("hidden", true)
-  }
-
-  hideChallenges() {
-    this.chllenges_container.setAttribute("hidden", true)
-    this.main.removeAttribute("hidden")
-  }
-
-  loadTarget(name) {
-    const img_link = `./Challenges/${name}/target.png`
-    const info_link = `./Challenges/${name}/info.txt`
-
-    this.target_img.src = img_link
-    this.target_img.alt = name
-
-    fetch(info_link)
-      .then((response) => response.text())
-      .then((html) => {
-        const text = html.split("\n")
-
-        this.match.innerText = text[0]
-        this.challenge_link.href = text[1]
-        this.challenge_link.innerText = text[2]
-        this.battle_link.href = text[3]
-        this.battle_link.innerText = text[4]
-      })
-      .catch((error) => console.warn(error))
-  }
-
-  createChallengesCards() {
-    const challange_select = document.querySelector("select")
-    const options = challange_select.querySelectorAll("option")
-
-    // prettier-ignore
-    const battles_data = [
-      ["Battle #1 - Pilot Battle", 0],
-      ["Battle #2 - Visibility", 12],
-      ["Battle #3 - Cursor", 18],
-      ["Battle #4 - Display", 20],
-      ["Battle #5 - Inline", 28],
-      ["Battle #6 - Conic", 30],
-      ["Battle #7 - Backface", 32],
-      ["Battle #8 - Transition", 41],
-      ["Battle #9 - Margin", 44],
-      ["Battle #10 - Block", 46],
-      ["Battle #11 - Overflow", 52],
-      ["Battle #12 - Blend", 60],
-      ["Battle #13 - Clip", 68],
-      ["Battle #14 - ZIndex", 76],
-      ["Battle #15 - Filter", 80],
-      ["Battle #16 - Aspect", 88],
-      ["Battle #17 - Christmas 🎄", 96],
-      ["Battle #18 - Float", 100],
-      ["Battle #19 - Spacing", 108],
-      ["Battle #20 - Hover", 116],
-      ["Battle #21 - Rotate", 124],
-      ["Battle #22 - Grid", 132],
-      ["Battle #23 - Contain", 140],
-      ["Battle #24 - Offset", 142],
-      ["Battle #25 - Flex", 150],
-      ["Battle #26 - Initial", 158],
-      ["Battle #27 - Relative", 166],
-      ["Battle #28 - Revert", 170],
-      ["Battle #29 - Font", 178],
-      ["Battle #30 - Gradient", 186],
-      ["", 194]
-    ]
-
-    let battle_id = 0
-    let battle_continer = null
-
-    for (let i = 0; i < options.length; i++) {
-      if (i === battles_data[battle_id][1]) {
-        const title = document.createElement("div")
-        title.className = "title"
-        title.innerText = battles_data[battle_id++][0]
-
-        battle_continer = document.createElement("div")
-        battle_continer.className = "battle"
-        battle_continer.appendChild(title)
-
-        this.chllenges_container.appendChild(battle_continer)
-      }
-
-      const img_link = `./Challenges/${options[i].value}/target.png`
-
-      const challenge = document.createElement("div")
-      challenge.className = "challenge"
-
-      if (options[i].disabled) challenge.setAttribute("disabled", true)
-      else {
-        challenge.addEventListener("click", () => {
-          this.current_challenge = options[i].value
-          this.loadTarget(this.current_challenge)
-          this.switchToNormal()
-          this.hideChallenges()
-        })
-      }
-
-      const img = document.createElement("img")
-      img.src = img_link
-      img.alt = options[i].value
-      challenge.appendChild(img)
-
-      const number = document.createElement("div")
-      number.className = "number"
-      number.innerText = `#${i + 1}`
-      challenge.appendChild(number)
-
-      battle_continer.appendChild(challenge)
-    }
-  }
-
-  loadSolution(type, name) {
-    let link = location.href.split("/").slice(0, -1).join("/")
-    link += `/Challenges/${name}/${type}.html`
-
-    fetch(link)
-      .then((response) => response.text())
-      .then((html) => {
-        this.chars.innerText = `${html.length - (html.match(new RegExp("\n", "g")) || []).length} characters`
-
-        this.code.textContent = html
-        this.code.dataset.highlighted = ""
-        hljs.highlightAll()
-
-        const iframe = document.querySelector(`iframe.${type}`)
-
-        if (iframe.src == link) return
-
-        iframe.src = link
-        iframe.addEventListener("load", (evt) => {
-          iframe.contentDocument.body.style.maxWidth = "400px"
-          iframe.contentDocument.body.style.maxHeight = "400px"
-          iframe.contentDocument.body.style.overflow = "hidden"
-        })
-      })
-      .catch((error) => console.warn(error))
-  }
-}
-
-new CSSBattleSolutions()
+const challenges_data = new ChallengesData(challenges, battles)
+const solution_preview = new SolutionPreview(challenges_data)

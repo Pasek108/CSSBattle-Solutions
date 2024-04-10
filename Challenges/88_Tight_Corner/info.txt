@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/88
-#88. Tight Corner
-https://cssbattle.dev/battle/15
-Battle #15

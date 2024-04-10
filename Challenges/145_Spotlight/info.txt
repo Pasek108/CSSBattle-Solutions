@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/145
-#145. Spotlight
-https://cssbattle.dev/battle/24
-Battle #24

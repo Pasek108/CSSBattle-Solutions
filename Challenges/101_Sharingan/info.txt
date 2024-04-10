@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/101
-#101. Sharingan
-https://cssbattle.dev/battle/18
-Battle #18

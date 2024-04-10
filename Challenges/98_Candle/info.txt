@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/98
-#98. Candle
-https://cssbattle.dev/battle/17
-Battle #17

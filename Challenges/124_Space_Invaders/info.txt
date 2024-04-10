@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/124
-#124. Space Invaders
-https://cssbattle.dev/battle/20
-Battle #20

@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/108
-#108. Clow Card
-https://cssbattle.dev/battle/18
-Battle #18

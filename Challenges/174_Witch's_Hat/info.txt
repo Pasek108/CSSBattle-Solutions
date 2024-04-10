@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/174
-#174. Witch's Hat
-https://cssbattle.dev/battle/28
-Battle #28

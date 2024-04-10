@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/150
-#150. Finger Heart
-https://cssbattle.dev/battle/24
-Battle #24

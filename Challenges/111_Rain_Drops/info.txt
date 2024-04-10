@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/111
-#111. Rain Drops
-https://cssbattle.dev/battle/19
-Battle #19

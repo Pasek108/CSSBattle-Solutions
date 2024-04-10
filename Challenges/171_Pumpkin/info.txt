@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/171
-#171. Pumpkin
-https://cssbattle.dev/battle/28
-Battle #28

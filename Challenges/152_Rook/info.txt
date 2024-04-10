@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/152
-#152. Rook
-https://cssbattle.dev/battle/25
-Battle #25

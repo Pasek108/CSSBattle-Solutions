@@ -1,5 +1,0 @@
-match in %
-https://cssbattle.dev/play/58
-#58. Rose
-https://cssbattle.dev/battle/11
-Battle #11
