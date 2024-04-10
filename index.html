@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
 
     <link rel="stylesheet" href="./Styles/reset.css" />
     <link rel="stylesheet" href="./Styles/style.css" />
@@ -32,9 +31,13 @@
     <div class="challenges-list" hidden></div>
 
     <div class="solution-preview show-normal">
-      <section class="code">
+      <section class="code normal">
         <header>Code <span class="chars"></span></header>
+        <pre><code class="language-html"></code></pre>
+      </section>
 
+      <section class="code minimal">
+        <header>Code <span class="chars"></span></header>
         <pre><code class="language-html"></code></pre>
       </section>
 
@@ -42,8 +45,8 @@
         <header>Preview</header>
 
         <div class="content">
-          <iframe class="normal" width="400" height="300" src="">x</iframe>
-          <iframe class="minimal" width="400" height="300" src="">x</iframe>
+          <iframe class="normal" width="400" height="300" src=""></iframe>
+          <iframe class="minimal" width="400" height="300" src=""></iframe>
 
           <div class="switch">
             <div class="normal">Normal</div>
@@ -65,6 +68,7 @@
     </div>
 
     <!-- --------------- scripts --------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="./Scripts/ChallengesData.js"></script>
     <script src="./Scripts/ChallengesList.js"></script>
     <script src="./Scripts/SolutionPreview.js"></script>

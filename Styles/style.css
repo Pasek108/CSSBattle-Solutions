@@ -56,17 +56,6 @@ option {
   color: white;
 } */
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0.25rem 1rem;
-  background-color: #21272d;
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-
 span {
   display: inline-block;
 }
@@ -200,6 +189,17 @@ h2 {
   background-color: #121518;
 }
 
+section header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  background-color: #21272d;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
 section .content {
   display: flex;
   flex-direction: column;
@@ -231,6 +231,14 @@ pre {
   overflow: scroll;
   word-break: break-all;
   white-space: break-spaces;
+}
+
+.solution-preview.show-normal .code.minimal {
+  display: none;
+}
+
+.solution-preview.show-minimal .code.normal {
+  display: none;
 }
 
 /* ------------- preview section ------------- */

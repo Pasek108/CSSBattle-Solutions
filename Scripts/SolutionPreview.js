@@ -8,11 +8,6 @@ class SolutionPreview {
 
     this.challenges_list = new ChallengesList(challenges_data, this)
 
-    /* ---------- code section ---------- */
-    const code_section = document.querySelector(".code")
-    this.chars = code_section.querySelector(`.chars`)
-    this.code = code_section.querySelector(`code`)
-
     /* ---------- preview section ---------- */
     const preview = document.querySelector(".preview")
 
@@ -24,11 +19,10 @@ class SolutionPreview {
 
     /* ---------- target section ---------- */
     const target = document.querySelector(".target")
-
-    this.match = target.querySelector(".match span")
+    this.target_img = target.querySelector("img")
     this.challenge_link = target.querySelector(".challenge-link")
     this.battle_link = target.querySelector(".battle-link")
-    this.target_img = target.querySelector("img")
+    this.match = target.querySelector(".match span")
 
     /* ---------- init challenge ---------- */
     this.current_challenge = this.challenges_data.challenges[0]
@@ -72,18 +66,21 @@ class SolutionPreview {
     const challenge = this.current_challenge
     const link = type == "normal" ? challenge.normal_solution_link : challenge.minimal_solution_link
 
+    const iframe = document.querySelector(`iframe.${type}`)
+    if (iframe.src == link) return
+
+    const code_container = document.querySelector(`.code.${type} code`)
+    const chars_counter = document.querySelector(`.code.${type} .chars`)
+
     fetch(link)
       .then((response) => response.text())
-      .then((html) => {
-        this.chars.innerText = `${html.length - (html.match(new RegExp("\n", "g")) || []).length} characters`
+      .then((solution_code) => {
+        const new_lines = solution_code.match(new RegExp("\n", "g")) || []
+        chars_counter.innerText = `${solution_code.length - new_lines.length} characters`
 
-        this.code.textContent = html
-        this.code.dataset.highlighted = ""
-        hljs.highlightAll()
-
-        const iframe = document.querySelector(`iframe.${type}`)
-
-        if (iframe.src == link) return
+        code_container.textContent = solution_code
+        code_container.dataset.highlighted = ""
+        hljs.highlightElement(code_container)
 
         iframe.src = link
         iframe.addEventListener("load", (evt) => {

@@ -161,7 +161,7 @@ const challenges = [
   [0, "157_Monopoly", 100],
   [0, "158_Clubs", 100],
   [0, "159_Portal", 100],
-  [0, "160_Donut", 100],
+  [1, "160_Donut", 100],
   [1, "161_Converge", 100],
   [1, "162_Upwards", 100],
   [0, "163_Missing_Piece", 100],
