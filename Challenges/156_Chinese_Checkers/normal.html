@@ -1,1 +1,46 @@
-Not attempted
+<div class="star">
+  <div class="dots-bg"></div>
+</div>
+
+<style>
+body {
+  background: #926927;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(
+    50vw 9vh,
+    59vw 29vh,
+    78vw 29vh,
+    68vw 50vh,
+    78vw 71vh,
+    59vw 71vh,
+    50vw 91vh,
+    41vw 71vh,
+    22vw 71vh,
+    31vw 50vh,
+    21vw 29vh,
+    41vw 29vh
+  );
+}
+
+.dots-bg, .dots-bg::before {
+  position: absolute;
+  top: 32px;
+  left: 43px;
+  width: 100vw;
+  height: 235px;
+  background: 
+    -8px/30px 50px 
+    radial-gradient(circle, #F8B140 10px, #fff0 0);
+}
+
+.dots-bg::before {
+  content: "";
+  top: 25px;
+  left: 45px;
+}
+</style>
