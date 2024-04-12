@@ -1,1 +1,43 @@
-Not attempted
+<div class="square"></div>
+<div class="circle"></div>
+
+<style>
+body {
+  margin: 0;
+  background:#E3516E;
+}
+
+.square {
+  position: absolute;
+  inset: 130px 100px;
+  width: 40px;
+  height: 40px;
+  background:#FADE8B;
+  color:#FADE8B;
+  -webkit-box-reflect: above -40px;
+  box-shadow:
+    80px 0,
+    160px 0,
+    0 80px,
+    80px 80px,
+    160px 80px,
+    40px 40px,
+    120px 40px;
+}
+
+.circle {
+  position: absolute;
+  inset: 180px 110px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background:#FADE8B;
+  color:#FADE8B;
+  -webkit-box-reflect: above 60px;
+  box-shadow:
+    80px 0,
+    160px 0,
+    40px 40px,
+    120px 40px;
+}
+</style>
