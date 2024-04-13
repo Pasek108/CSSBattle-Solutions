@@ -75,7 +75,7 @@ Programs:
   - Grouping by battle
   - Disabling not attempted challenges
 
-----------------------------------
+<br>
 
 ## Project details
 This section is a general description of the project required to understand how it works, the exact details are in the code or simply are the code.
