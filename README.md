@@ -8,6 +8,7 @@
 
 ## Table of Contents
 * [What is CSSBattle](#what-is-cssbattle)
+  * [Is it worth playing](#is-it-worth-playing)
   * [Useful links](#useful-links)
 * [Project overview](#project-overview)
   * [Technologies](#technologies)
@@ -21,7 +22,12 @@
 
 ## What is CSSBattle
 [CSSBattle](https://cssbattle.dev) is an online game where players compete with each other to create the shortest and most effective CSS code to recreate visual shapes and patterns. 
-CSSBattle is a fun and challenging way to improve CSS coding skills while competing with other players.
+CSSBattle is a fun and challenging way to improve CSS coding skills while competing with other players. It is the first ever code-golfing platform for CSS lovers. 
+
+----------------------------------
+
+### Is it worth playing
+Playing the game helps to better understand CSS and gives opportunity to use properties that are rarely used, but to climb the leaderboards it requires to exploit how HTML and CSS are parsed by browsers, therefore the code written here is not the way anyone would write it in a real project. 
 
 ----------------------------------
 
@@ -129,7 +135,7 @@ The project directory tree looks like this:
 #### script.js
 This is the starting file of the program. 
 
-Contains the required challenges and battles data:
+Contains the required data of challenges and battles:
 - challenges [solved, folder_name, match_precentage]
 - battles [battle_name, last_challenge_id]
 
