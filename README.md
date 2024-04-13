@@ -76,7 +76,7 @@ This section is a general description of the project required to understand how 
 
 ### User interface
 #### Solution preview
-![main menu](/_for_readme/solution_preview.png)
+![solution preview](/_for_readme/solution_preview.png)
 Solution preview has 3 sections:
 - Code section shows:
   - Hilighted code
@@ -92,7 +92,7 @@ Solution preview has 3 sections:
 ----------------------------------
 
 #### Challenges list
-![achievements](/_for_readme/challenges_list.png)
+![challenges list](/_for_readme/challenges_list.png)
 Challenges list view shows all challenges grouped by battle in increasing order. 
 
 The challenges are numbered and can be in disbaled state that means I didn't attempt the challenge yet.
