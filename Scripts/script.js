@@ -17,7 +17,7 @@ const challenges = [
   [1, "13_Totally_Triangle", 100],
   [1, "14_Web_Maker_Logo", 100],
   [1, "15_Overlap", 100],
-  [0, "16_Eye_of_the_Tiger", 100],
+  [1, "16_Eye_of_the_Tiger", 100],
   [0, "17_Fidget_Spinner", 100],
   [1, "18_Matrix", 100],
   [0, "19_Cube", 100],
