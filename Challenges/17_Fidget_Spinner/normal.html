@@ -1,1 +1,52 @@
-Not attempted
+<div class="circle blue-skin1"></div>
+<div class="circle blue-skin2"></div>
+<div class="circle pink-blue1"></div>
+<div class="circle pink-blue2"></div>
+
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: radial-gradient(
+    circle,
+    #E78481 40px,
+    #09042A 40px
+  );
+}
+
+.circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 99rem;
+  border: 10px solid;
+}
+
+.blue-skin1, .blue-skin2 {
+  background: #F5BB9C;
+  color: #09042A;
+}
+
+.pink-blue1, .pink-blue2 {
+  background: #09042A;
+  color: #E78481;
+}
+
+.blue-skin1 {
+  margin-top: -106px;
+}
+
+.blue-skin2 {
+  margin-top: 106px;
+}
+
+.pink-blue1 {
+  margin-left: -120px;
+}
+
+.pink-blue2 {
+  margin-left: 120px;
+}
+</style>
