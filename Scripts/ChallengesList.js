@@ -6,6 +6,9 @@ class ChallengesList {
     this.solution_preview = solution_preview
 
     this.container = document.querySelector(".challenges-list")
+
+    this.help = document.querySelector(".help-content")
+
     this.show_challenges = document.querySelector(".show-challenges")
     this.show_challenges.addEventListener("click", this.toggleChallenges.bind(this))
 
@@ -14,6 +17,8 @@ class ChallengesList {
   }
 
   toggleChallenges() {
+    this.help.setAttribute("hidden", "true")
+
     if (this.container.hasAttribute("hidden")) {
       this.container.removeAttribute("hidden")
       this.solution_preview.container.setAttribute("hidden", true)

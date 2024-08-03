@@ -20,8 +20,8 @@ const challenges = [
   [1, "16_Eye_of_the_Tiger", 100],
   [1, "17_Fidget_Spinner", 100],
   [1, "18_Matrix", 100],
-  [0, "19_Cube", 100],
-  [0, "20_Ticket", 100],
+  [1, "19_Cube", 100],
+  [1, "20_Ticket", 100],
   [0, "21_SitePoint_Logo", 100],
   [0, "22_Cloud", 100],
   [1, "23_Boxception", 100],
@@ -196,6 +196,14 @@ const challenges = [
   [0, "192_Abstract_Firefly", 100],
   [0, "193_Galver", 100],
   [0, "194_Fountain", 100],
+  [0, "195_LookAway", 100],
+  [0, "196_Tree", 100],
+  [0, "197_Crystal", 100],
+  [0, "198_Walls", 100],
+  [0, "199_Antenna", 100],
+  [0, "200_Lantern", 100],
+  [0, "201_Triple_Zero", 100],
+  [0, "202_Steering_Wheel", 100],
 ]
 
 // [battle_name, last_challenge_id]
@@ -230,7 +238,24 @@ const battles = [
   ["Battle #28 - Revert", 178],
   ["Battle #29 - Font", 186],
   ["Battle #30 - Gradient", 194],
+  ["Battle #31 - Opacity", 202],
 ]
 
 const challenges_data = new ChallengesData(challenges, battles)
 const solution_preview = new SolutionPreview(challenges_data)
+
+let help_button = document.querySelector(".help-button")
+let help_container = document.querySelector(".help-content")
+let preview_container = document.querySelector(".solution-preview")
+let list_container = document.querySelector(".challenges-list")
+
+help_button.addEventListener("click", () => {
+  if (help_container.hasAttribute("hidden")) {
+    help_container.removeAttribute("hidden")
+    preview_container.setAttribute("hidden", "true")
+    list_container.setAttribute("hidden", "true")
+  } else {
+    help_container.setAttribute("hidden", true)
+    preview_container.removeAttribute("hidden")
+  }
+})
