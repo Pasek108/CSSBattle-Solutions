@@ -131,6 +131,13 @@ body > header {
   padding: 1rem;
   background-color: #13181c;
   text-align: justify;
+  line-height: 1.5;
+}
+
+.help-content h1 {
+  margin-top: 0;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .help-content h2 {
