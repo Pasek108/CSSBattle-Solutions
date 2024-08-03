@@ -106,7 +106,6 @@ The challenges are numbered and can be in disbaled state that means I didn't att
 ----------------------------------
 
 ### Project structure
-The project directory tree looks like this:
 - :file_folder: CSSBattle-Solutions (project folder)
   - :page_facing_up: *github config*
   - :page_facing_up: *readme file*
@@ -118,7 +117,8 @@ The project directory tree looks like this:
   - :file_folder: Challenges
     - :file_folder: *challenge_name*
       - :page_facing_up: *.png target to recretae*
-      - :page_facing_up: *.html minimal and normal solution*
+      - :page_facing_up: *.html normal solution*
+      - :page_facing_up: *.html minimal solution*
     - :file_folder: *other challenges...*
   
 ----------------------------------
