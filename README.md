@@ -76,26 +76,27 @@ Programs:
 - [VSCode](https://code.visualstudio.com)
 
 ## Features
+- Well-organized challenges files
 - Nice and responsive UI
 - Solution preview
-  - Code hilighting
-  - Characters counter
-  - Loading real html for preview
+  - Code highlighting
+  - Character counter
+  - Loading real HTML for preview
   - Switching between solutions
 - List of challenges
-  - Choosing challenge to preview
+  - Selecting a challenge to preview
   - Grouping by battle
-  - Disabling not attempted challenges
+  - Disabling unattempted challenges
 
 ## Copyright :copyright:
-I do not own the rights to the content of the exercises. All challenge data was downloaded and included only to provide context for the solutions.
+I do not own the rights to the content of the challenges. All challenge data was downloaded and included only to provide context for the solutions.
 
 <br>
 
 # Details :scroll:
-This section is a general description of the project required to understand how it works, the exact details are in the code or simply are the code.
 
 ## User interface
+
 ### Solution preview
 ![solution preview](/_for_readme/solution_preview.png)
 Solution preview has 3 sections:
@@ -133,7 +134,6 @@ The challenges are numbered and can be in disbaled state that means I didn't att
     - :file_folder: *other challenges...*
 
 ## Code organization
-
 ![program diagram](/_for_readme/program_diagram.png)
 
 > [!WARNING]  
