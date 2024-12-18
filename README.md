@@ -6,7 +6,7 @@
 </p>
 <div align="center">
   <a href="https://www.ur.edu.pl/pl/kolegia/kolegium-nauk-przyrodniczych">
-    <img src="_for_readme/_banner.jpg">
+    <img src="_for_readme/banner.jpg">
   </a>
 </div>
 
@@ -19,32 +19,33 @@
 
 <br>
 
-## Table of Contents
-* [What is CSSBattle](#what-is-cssbattle)
+# Table of Contents
+* [CSSBattle :thinking:](#cssbattle-thinking)
+  * [What is it](#what-is-it)
   * [Is it worth playing](#is-it-worth-playing)
   * [Useful links](#useful-links)
-* [Project overview](#project-overview)
+* [Overview :sparkles:](#overview-sparkles)
+  * [About](#about)
   * [Technologies](#technologies)
   * [Features](#features)
-* [Project details](#project-details)
+  * [Copyright](#copyright-copyright)
+* [Details :scroll:](#details-scroll)
   * [User interface](#user-interface)
   * [Project structure](#project-structure)
   * [Code organization](#code-organization)
 
 <br>
 
-## What is CSSBattle
+# CSSBattle :thinking:
+
+## What is it
 [CSSBattle](https://cssbattle.dev) is an online game where players compete with each other to create the shortest and most effective CSS code to recreate visual shapes and patterns. 
 CSSBattle is a fun and challenging way to improve CSS coding skills while competing with other players. It is the first ever code-golfing platform for CSS lovers. 
 
-----------------------------------
-
-### Is it worth playing
+## Is it worth playing
 Playing the game helps to better understand CSS and gives opportunity to use properties that are rarely used, but to climb the leaderboards it requires to exploit how HTML and CSS are parsed by browsers, therefore the code written here is not the way anyone would write it in a real project. 
 
-----------------------------------
-
-### Useful links
+## Useful links
 - [CSSBattle Previewer 2.1](https://tc70f3.csb.app)
 - [CSSBattle Unit Converter](https://u9kels.csb.app)
 - [CSSBattle getting started](https://cssbattle.dev/blog/getting-started)
@@ -52,16 +53,16 @@ Playing the game helps to better understand CSS and gives opportunity to use pro
 
 <br>
 
-## Project overview
-The project contains my normal and minimal solutions for [CSSBattle](https://cssbattle.dev) challanges.
+# Overview :sparkles:
 
-Check my [CSSBattle profile](https://cssbattle.dev/player/artur_pas) and see [live demo](https://pasek108.github.io/CSSBattle-Solutions/).
+## About
+The project is a showcase of my solutions for [CSSBattle](https://cssbattle.dev) challanges. Each solution contains an image that I had to recreate, as well as my normal and minimal solutions that accomplish this task. 
+
+Check out the [live version](https://pasek108.github.io/CSSBattle-Solutions/) of this project, as well as my [CSSBattle profile](https://cssbattle.dev/player/artur_pas).
 
 ![preview](/_for_readme/preview.png)
 
-----------------------------------
-
-### Technologies
+## Technologies
 Languages:
 - HTML
 - CSS
@@ -73,8 +74,6 @@ Libraries and frameworks:
 
 Programs:
 - [VSCode](https://code.visualstudio.com)
-
-----------------------------------
 
 ### Features
 - Nice and responsive UI
@@ -88,13 +87,16 @@ Programs:
   - Grouping by battle
   - Disabling not attempted challenges
 
+## Copyright :copyright:
+I do not own the rights to the content of the exercises. All challenge data was downloaded and included only to provide context for the solutions.
+
 <br>
 
-## Project details
+# Details :scroll:
 This section is a general description of the project required to understand how it works, the exact details are in the code or simply are the code.
 
-### User interface
-#### Solution preview
+## User interface
+### Solution preview
 ![solution preview](/_for_readme/solution_preview.png)
 Solution preview has 3 sections:
 - Code section shows:
@@ -108,17 +110,13 @@ Solution preview has 3 sections:
   - Links to challenge and battle
   - Solution match precentage
 
-----------------------------------
-
-#### Challenges list
+### Challenges list
 ![challenges list](/_for_readme/challenges_list.png)
 Challenges list view shows all challenges grouped by battle in increasing order. 
 
 The challenges are numbered and can be in disbaled state that means I didn't attempt the challenge yet.
 
-----------------------------------
-
-### Project structure
+## Project structure
 - :file_folder: CSSBattle-Solutions (project folder)
   - :page_facing_up: *github config*
   - :page_facing_up: *readme file*
@@ -133,19 +131,15 @@ The challenges are numbered and can be in disbaled state that means I didn't att
       - :page_facing_up: *.html normal solution*
       - :page_facing_up: *.html minimal solution*
     - :file_folder: *other challenges...*
-  
-----------------------------------
 
-### Code organization
+## Code organization
 
 ![program diagram](/_for_readme/program_diagram.png)
 
 > [!WARNING]  
 > Classes must be loaded from bottom to the top to avoid situation when class does not exist in the time of its objects creation
 
-----------------------------------
-
-#### script.js
+### script.js
 This is the starting file of the program. 
 
 Contains the required data of challenges and battles:
@@ -156,26 +150,20 @@ Creates:
 - ChallengesData
 - SolutionPreview 
 
-----------------------------------
-
-#### ChallengesData
+### ChallengesData
 Takes required data of challenges and battles and then:
 - Creates array of challenges objects with challenge data and links to its resources
 - Creates array of battles objects with with battle data and links to its resources
 - Connects challenges to the battles which they are part of
 
-----------------------------------
-
-#### SolutionPreview
+### SolutionPreview
 Takes ChallengesData object, creates ChallengesList and is responsible for:
 - Loading solution 
 - Counting solution length
 - Hilighting code
 - Switching between normal and minimal solution
 
-----------------------------------
-
-#### ChallengesList
+### ChallengesList
 Takes ChallengesData and  SolutionPreview objects and is responsible for:
 - Creating list of challenges grouped by battle 
 - Toggling list of all challenges
