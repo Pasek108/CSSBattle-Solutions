@@ -5,7 +5,7 @@
   </strong>
 </p>
 <div align="center">
-  <a href="https://www.ur.edu.pl/pl/kolegia/kolegium-nauk-przyrodniczych">
+  <a href="https://cssbattle.dev">
     <img src="_for_readme/banner.jpg">
   </a>
 </div>
