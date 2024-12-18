@@ -75,7 +75,7 @@ Libraries and frameworks:
 Programs:
 - [VSCode](https://code.visualstudio.com)
 
-### Features
+## Features
 - Nice and responsive UI
 - Solution preview
   - Code hilighting
