@@ -1,4 +1,17 @@
-# CSSBattle Solutions - Readme
+<h1 align="center">CSSBattle-Solutions - Readme</h1>
+<p align="center">
+  <strong>
+    My normal and minimal solutions for <a href="https://cssbattle.dev">CSSBattle</a> challenges
+  </strong>
+</p>
+<div align="center">
+  <a href="https://www.ur.edu.pl/pl/kolegia/kolegium-nauk-przyrodniczych">
+    <img src="_for_readme/_banner.jpg">
+  </a>
+</div>
+
+<br>
+
 > [!CAUTION]  
 > <h4>Please, don't look at my solutions until you have completed it yourself.</h4>
 > Challenges like that are opportunity to become better by coming up with your own solution. Take your time and think about your own approach.<br>
