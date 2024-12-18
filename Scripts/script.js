@@ -22,8 +22,8 @@ const challenges = [
   [1, "18_Matrix", 100],
   [1, "19_Cube", 100],
   [1, "20_Ticket", 100],
-  [0, "21_SitePoint_Logo", 100],
-  [0, "22_Cloud", 100],
+  [1, "21_SitePoint_Logo", 100],
+  [1, "22_Cloud", 100],
   [1, "23_Boxception", 100],
   [0, "24_Switches", 100],
   [0, "25_Blossom", 100],
@@ -204,6 +204,22 @@ const challenges = [
   [0, "200_Lantern", 100],
   [0, "201_Triple_Zero", 100],
   [0, "202_Steering_Wheel", 100],
+  [0, "203_Wolverine", 100],
+  [0, "204_Deadpool", 100],
+  [0, "205_Magneto's_Helmet", 100],
+  [0, "206_Punisher", 100],
+  [0, "207_Green_Lantern_Logo", 100],
+  [0, "208_Hulk_Fist", 100],
+  [0, "209_Iron_Man", 100],
+  [0, "210_Black_Widow_Logo", 100],
+  [0, "211_CSS_Weekly", 100],
+  [0, "212_Fibonacci_Peacock", 100],
+  [0, "213_Boat", 100],
+  [0, "214_Newspaper", 100],
+  [0, "215_Staggered_Checks", 100],
+  [0, "216_Pies", 100],
+  [0, "217_Maze", 100],
+  [0, "218_3D", 100],
 ]
 
 // [battle_name, last_challenge_id]
@@ -239,6 +255,8 @@ const battles = [
   ["Battle #29 - Font", 186],
   ["Battle #30 - Gradient", 194],
   ["Battle #31 - Opacity", 202],
+  ["Battle #32 - Animation", 210],
+  ["Battle #33 - Outline", 218],
 ]
 
 const challenges_data = new ChallengesData(challenges, battles)

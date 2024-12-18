@@ -124,14 +124,20 @@ body > header {
 }
 
 .help-content {
-  max-width: 60rem;
-  width: fit-content;
-  min-height: calc(100vh - 4rem);
-  margin: auto;
-  padding: 1rem;
+  width: 100%;
+  max-height: calc(100vh - 4rem);
   background-color: #13181c;
   text-align: justify;
   line-height: 1.5;
+  overflow-y: scroll;
+}
+
+.help-content-wrapper {
+  max-width: 60rem;
+  height: fit-content;
+  margin: auto;
+  padding: 1rem;
+  background-color: #13181c;
 }
 
 .help-content h1 {
@@ -393,5 +399,17 @@ iframe {
   .code {
     max-width: unset;
     min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  body > header {
+    height: fit-content;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  body > header .title {
+    margin-left: -2.5rem;
   }
 }

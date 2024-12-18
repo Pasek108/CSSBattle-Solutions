@@ -1,1 +1,58 @@
-Not attempted
+<div class="orange long"></div>
+<div class="orange short"></div>
+<div class="blue long"></div>
+<div class="blue short"></div>
+
+<style>
+body {
+  margin: 0;
+  background-color: #222;
+  rotate: 45deg;
+}
+
+.orange, .blue {
+  position: absolute;
+  height: 30px;
+}
+
+.orange {
+  background-color: #F2994A;
+}
+
+.blue {
+  background-color: #2D9CDB;
+}
+
+.long {
+  width: 100px;
+  border-radius: 10px 0 0 0;
+}
+
+.short {
+  width: 50px;
+  border-radius: 0 0 0 5px;
+}
+
+.blue.long {
+  top: 145px;
+  left: 199px;
+  rotate: 90deg;
+}
+
+.blue.short {
+  top: 110px;
+  left: 185px;
+}
+
+.orange.long {
+  top: 126px;
+  left: 100px;
+  rotate: -90deg;
+}
+
+.orange.short {
+  top: 161px;
+  left: 164px;
+  rotate: -180deg;
+}
+</style>
