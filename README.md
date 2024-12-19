@@ -14,8 +14,9 @@
 
 > [!CAUTION]  
 > <h4>Please, don't look at my solutions until you have completed it yourself.</h4>
-> Challenges like that are opportunity to become better by coming up with your own solution. Take your time and think about your own approach.<br>
-> If you can't complete challenge, skip it and come back to it later. Look at someone's solutions as a last resort but consider it as defeat.
+> Challenges like these are an opportunity to improve by coming up with your own solutions. Take your time and think about your approach.  
+> If you can't complete a challenge, skip it and come back to it later. Only look at someone else's solutions as a last resort, and treat it as a learning opportunity rather than a defeat.
+
 
 <br>
 
